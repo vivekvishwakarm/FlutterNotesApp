@@ -15,12 +15,12 @@ class HiveServices {
 
   //update note
   Future<void> updateNote(int index, NoteModel noteModel) async {
-    await box.put(index, noteModel);
+    await box.putAt(index, noteModel);
   }
 
   //delete note
   Future<void> deleteNote(int index) async {
-    await box.delete(index);
+    await box.deleteAt(index);
   }
 
   showMassage(BuildContext context, String massage, Color bgColor) {

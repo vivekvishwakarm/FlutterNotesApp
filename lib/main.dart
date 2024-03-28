@@ -11,7 +11,7 @@ void main() async {
   await Hive.initFlutter();
   Hive.registerAdapter(NoteModelAdapter());
 
-  var myBox = await Hive.openBox<NoteModel>(HiveServices.boxName);
+  await Hive.openBox<NoteModel>(HiveServices.boxName);
 
   // print("mybox lenght: ${myBox.length}");
 

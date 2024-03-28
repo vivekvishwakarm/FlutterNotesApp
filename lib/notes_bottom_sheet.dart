@@ -1,11 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:notesapp/hive_services.dart';
 import 'package:notesapp/model/note_model.dart';
 
-addNotes(BuildContext context) {
+notesBottomSheet(BuildContext context,
+    {int? index, String? title, String? description}) {
   TextEditingController titleController = TextEditingController();
   TextEditingController descriptionController = TextEditingController();
+
+  if (index == null) {
+    titleController.clear();
+    descriptionController.clear();
+  } else {
+    titleController.text = title.toString();
+    descriptionController.text = description.toString();
+  }
 
   showModalBottomSheet(
       context: context,
@@ -25,9 +33,10 @@ addNotes(BuildContext context) {
               EdgeInsets.only(bottom: MediaQuery.of(context).viewInsets.bottom),
           child: Column(
             children: [
-              const Text(
-                'Notes App',
-                style: TextStyle(fontSize: 22, fontWeight: FontWeight.w500),
+              Text(
+                index == null ? 'Add Notes App' : 'Update Notes',
+                style:
+                    const TextStyle(fontSize: 22, fontWeight: FontWeight.w500),
               ),
               const SizedBox(
                 height: 5,
@@ -61,7 +70,17 @@ addNotes(BuildContext context) {
                               description:
                                   descriptionController.text.toString());
 
-                          HiveServices().addNote(noteModel);
+                          if (index == null) {
+                            HiveServices().addNote(noteModel);
+                            HiveServices().showMassage(
+                                context, 'Added successfully', Colors.green);
+                          } else {
+                            HiveServices().updateNote(index, noteModel);
+                            HiveServices().showMassage(
+                                context, 'Updated successfully', Colors.green);
+                          }
+
+                          Navigator.pop(context);
                         }
                       },
                       child: const Text("Submit")))

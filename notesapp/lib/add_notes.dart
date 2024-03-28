@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:notesapp/hive_services.dart';
 import 'package:notesapp/model/note_model.dart';
 
@@ -62,7 +61,6 @@ addNotes(BuildContext context) {
                                   descriptionController.text.toString());
 
                           HiveServices().addNote(noteModel);
-                          
                         }
                       },
                       child: const Text("Submit")))

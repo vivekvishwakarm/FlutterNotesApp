@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/adapters.dart';
-import 'package:notesapp/add_notes.dart';
+import 'package:notesapp/notes_bottom_sheet.dart';
 import 'package:notesapp/hive_services.dart';
 import 'package:notesapp/model/note_model.dart';
 
@@ -39,21 +39,30 @@ class HomeScreen extends StatelessWidget {
                           itemBuilder: (context) => [
                             PopupMenuItem(
                                 child: ListTile(
-                              onTap: () =>
-                                  HiveServices().updateNote(index, noteModel),
+                              onTap: () {
+                                Navigator.pop(context);
+                                notesBottomSheet(context,
+                                    index: index,
+                                    title: noteModel.title.toString(),
+                                    description:
+                                        noteModel.description.toString());
+                              },
                               title: const Text('Update',
                                   style: TextStyle(fontSize: 14)),
                               trailing: const Icon(Icons.edit),
                             )),
                             PopupMenuItem(
                                 child: ListTile(
+                              onTap: () {
+                                HiveServices().deleteNote(index);
+                                Navigator.pop(context);
+                                HiveServices().showMassage(context,
+                                    'Delete Successfully', Colors.redAccent);
+                              },
                               title: const Text(
                                 'Delete',
                                 style: TextStyle(fontSize: 15),
                               ),
-                              onTap: () {
-                                HiveServices().deleteNote(index);
-                              },
                               trailing: const Icon(Icons.delete),
                             ))
                           ],
@@ -63,7 +72,7 @@ class HomeScreen extends StatelessWidget {
           }),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          addNotes(context);
+          notesBottomSheet(context);
         },
         child: const Icon(Icons.add),
       ),
