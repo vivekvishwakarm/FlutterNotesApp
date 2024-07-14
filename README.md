@@ -1,7 +1,8 @@
 <h1 align="center">Flutter Notes App</h1>
+
 <h4 This is a simple note-taking application developed using Flutter framework and Dart programming language. It utilizes Hive for efficient local data storage.</h4>
 <p>
-  <h6>Features</h6>
+  **Features**
 Create, read, update, and delete notes.
 Simple and intuitive user interface.
 Efficient local data storage using Hive.
