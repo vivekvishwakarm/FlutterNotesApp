@@ -15,7 +15,7 @@ This is a simple note-taking application developed using Flutter framework and D
 </div>
 <br>
 <br>
-https://github.com/user-attachments/assets/3fd3e5ec-46c4-45e7-a472-3066ff7adb9f
+![4p9p4o](https://github.com/user-attachments/assets/34d0446c-9650-49e8-9eb1-3d2b942872db)
 <br>
 
 Installation
