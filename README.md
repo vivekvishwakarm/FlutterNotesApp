@@ -14,9 +14,6 @@ This is a simple note-taking application developed using Flutter framework and D
   <img src="https://github.com/user-attachments/assets/07c77f17-6f0e-4086-90fb-a768915e4e9a" width="300" height="600" alt="Image description">
 </div>
 <br>
-<br>
-![4p9p4o](https://github.com/user-attachments/assets/34d0446c-9650-49e8-9eb1-3d2b942872db)
-<br>
 
 Installation
 Clone the repository:
