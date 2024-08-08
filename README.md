@@ -13,36 +13,7 @@ This is a simple note-taking application developed using Flutter framework and D
 ## ScreenShots
 
 ![NotesAppPicture](https://github.com/user-attachments/assets/deefbd47-087e-4dca-b6c3-44a8b5a63b99)
-  
-Installation
-Clone the repository:
-git clone https://github.com/yourusername/FlutterNotesApp.git
 
-Navigate to the project directory:
-cd FlutterNotesApp
 
-Install dependencies:
-flutter pub get
-
-Run the app:
-flutter run
-
-Dependencies
-Flutter
-Hive
-
-Getting Started
-Launch the app on your device or emulator.
-You will be greeted with the list of existing notes if any, or an empty screen if there are no notes yet.
-To add a new note, tap on the "+" button.
-Fill in the note details such as title and content, then tap on the "Save" button.
-To edit a note, simply tap on the note from the list and make the necessary changes.
-To delete a note, swipe left on the note in the list and tap on the delete icon.
-Your notes are stored locally on the device using Hive.
-Contributing
-Contributions are welcome! Feel free to open an issue or submit a pull request for any improvements or features you'd like to add.
-
-License
-This project is licensed under the MIT License.
 
 
