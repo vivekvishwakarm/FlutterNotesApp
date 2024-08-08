@@ -10,8 +10,10 @@ This is a simple note-taking application developed using Flutter framework and D
 - Efficient local data storage using Hive.
 - Responsive design for various screen sizes.
 
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/07c77f17-6f0e-4086-90fb-a768915e4e9a" width="300" height="600" alt="Image description">
+</div>
 
-<img src="https://github.com/user-attachments/assets/07c77f17-6f0e-4086-90fb-a768915e4e9a" width="300" height="600" alt="Image description">
 
 
 Installation
