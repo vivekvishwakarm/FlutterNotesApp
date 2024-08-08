@@ -14,6 +14,8 @@ This is a simple note-taking application developed using Flutter framework and D
 
 ![NotesAppPicture](https://github.com/user-attachments/assets/deefbd47-087e-4dca-b6c3-44a8b5a63b99)
 
+![Vivek Linkdin banner](https://github.com/user-attachments/assets/5dff88a8-ab59-4829-a306-ace6f213e998)
+
 
 
 
