@@ -15,7 +15,7 @@ This is a simple note-taking application developed using Flutter framework and D
 </div>
 <br>
 <br>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/S_ZlaERjfag?si=XHBYjpxm7Hc-EujG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+https://github.com/user-attachments/assets/3fd3e5ec-46c4-45e7-a472-3066ff7adb9f
 <br>
 
 Installation
