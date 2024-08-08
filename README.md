@@ -11,7 +11,7 @@ This is a simple note-taking application developed using Flutter framework and D
 - Responsive design for various screen sizes.
 <br>
 <div align="center">
-  ![NotesAppPicture](https://github.com/user-attachments/assets/cd4eeee1-8fae-49fc-ab68-4fdbc3b2e1b3)
+  <img src="my_image.jpg" width="300" height="200" alt="A beautiful image">
 </div>
 <br>
 
