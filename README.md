@@ -10,13 +10,10 @@ This is a simple note-taking application developed using Flutter framework and D
 - Efficient local data storage using Hive.
 - Responsive design for various screen sizes.
 
+## ScreenShots
 
-<br>
 ![NotesAppPicture](https://github.com/user-attachments/assets/deefbd47-087e-4dca-b6c3-44a8b5a63b99)
-<br>
   
-
-
 Installation
 Clone the repository:
 git clone https://github.com/yourusername/FlutterNotesApp.git
